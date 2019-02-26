@@ -40,8 +40,8 @@ app.post('/send', (req, res) => {
         port: 587,
         secure: false,
         auth: {
-            user: 'john.sticher@outlook.com',
-            pass: 'Saramcl1!'
+            user: 'your.username@outlook.com',
+            pass: 'YourPassword!'
         },
         tls:{
             rejectUnauthorized:false
@@ -50,7 +50,7 @@ app.post('/send', (req, res) => {
 
     let mailOptions = {
         from: '"Nodemailer Contact" <john.sticher@outlook.com>',
-        to: 'john.sticher@gmail.com',
+        to: 'your.username@outlook.com',
         subject: 'Node Contact Request',
         text: 'You are awesome',
         html: output //html body
