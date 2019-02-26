@@ -49,7 +49,7 @@ app.post('/send', (req, res) => {
     });
 
     let mailOptions = {
-        from: '"Nodemailer Contact" <john.sticher@outlook.com>',
+        from: '"Nodemailer Contact" <your.username@outlook.com>',
         to: 'your.username@outlook.com',
         subject: 'Node Contact Request',
         text: 'You are awesome',
